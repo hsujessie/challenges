@@ -1,3 +1,5 @@
+//My solution
+/*
 function capitalize(sentence) {
     let arr = sentence.split(" ");
     let newArr = [];
@@ -14,6 +16,22 @@ function capitalize(sentence) {
     }
 
     return newSentence.trim();
+}
+
+console.log(capitalize('a short sentence'));
+console.log(capitalize('a lazy fox'));
+console.log(capitalize('look, it is working!'));
+*/
+
+
+//Teacher's solution
+function capitalize(sentence) {
+    let arr = sentence.split(" ");
+    for(let i = 0; i < arr.length; i++) {
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+    }
+
+    return arr.join(" ");
 }
 
 console.log(capitalize('a short sentence'));
