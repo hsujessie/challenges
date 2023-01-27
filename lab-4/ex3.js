@@ -37,20 +37,30 @@ Mr. Parkes did it in the dining room with the knife!
 let weapon = "knife";
 let room = "dining room";
 let suspect = "Mr. Parkes";
-let isSolved = true;
+let isSolved = false;
 
-if(weapon === "poison" && suspect === "Mr. Kalehoff" && room === "ballroom") {
-    isSolved;
+if(room === "ballroom") {
+    weapon === "poison";
+    if(suspect === "Mr. Kalehoff") {
+        isSolved = true;
+    }
+} else if(room === "gallery") {
+    weapon === "trophy";
+    if(suspect === "Ms. Van Cleve") {
+        isSolved = true;
+    }
+} else if(room === "billiards room") {
+    weapon === "pool";
+    if(suspect === "Mrs. Sparr") {
+        isSolved = true;
+    }
+} else if(room === "dining room") {
+    weapon === "knife";
+    if(suspect === "Mr. Parkes") {
+        isSolved = true;
+    }
+}
+
+if(isSolved) {
     console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
-} else if(weapon === "trophy" && suspect === "Ms. Van Cleve" && room === "gallery") {
-    isSolved;
-    console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
-} else if(weapon === "pool" && suspect === "Mrs. Sparr" && room === "billiards room") {
-    isSolved;
-    console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
-} else if(weapon === "knife" && suspect === "Mr. Parkes" && room === "dining room") {
-    isSolved;
-    console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
-} else {
-    isSolved = false;
 }
