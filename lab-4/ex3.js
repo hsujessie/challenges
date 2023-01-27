@@ -1,7 +1,7 @@
 /*
 A murder mystery is a game typically played at parties wherein one of the partygoers is secretly, and unknowingly, playing a murderer, and the other attendees must determine who among them is the criminal. It's a classic case of whodunnit.
 
-Since this might be your first time playing a murder mystery, we've simplified things quite a bit to make it easier. 
+Since this might be your first time playing a murder mystery, we've simplified things quite a bit to make it easier.
 Here's what we know! In this murder mystery there are:
 
 four rooms: the ballroom, gallery, billiards room, and dining room,
@@ -23,7 +23,7 @@ And we know that each suspect was located in a specific room at the time of the 
 To help solve this mystery, write a combination of conditional statements that:
 
 - sets the value of weapon based on the room and
-- sets the value of solved to true if the value of room matches the suspect's room 
+- sets the value of solved to true if the value of room matches the suspect's room
 
 Afterwards, use this template to print a message to the console if the mystery was solved:
 
@@ -33,3 +33,24 @@ What goes into the three blank spaces? You can fill in the blanks with the name 
 
 Mr. Parkes did it in the dining room with the knife!
 */
+
+let weapon = "knife";
+let room = "dining room";
+let suspect = "Mr. Parkes";
+let isSolved = true;
+
+if(weapon === "poison" && suspect === "Mr. Kalehoff" && room === "ballroom") {
+    isSolved;
+    console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
+} else if(weapon === "trophy" && suspect === "Ms. Van Cleve" && room === "gallery") {
+    isSolved;
+    console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
+} else if(weapon === "pool" && suspect === "Mrs. Sparr" && room === "billiards room") {
+    isSolved;
+    console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
+} else if(weapon === "knife" && suspect === "Mr. Parkes" && room === "dining room") {
+    isSolved;
+    console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
+} else {
+    isSolved = false;
+}
